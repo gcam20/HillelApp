@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redabstract"
+    tools:context=".ReligiousCommunitiesToastActivity" >
+
+    <Button
+        android:id="@+id/rjc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cjc"
+        android:layout_toLeftOf="@+id/cjcSwitch"
+        android:text="Reform Jewish Community"
+        android:textColor="@color/white" />
+
+    <Switch
+        android:id="@+id/cjcSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/cjc"
+        android:layout_alignBottom="@+id/cjc"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/scSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sc"
+        android:layout_alignBottom="@+id/sc"
+        android:layout_alignLeft="@+id/ocpSwitch"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/ocpSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ocp"
+        android:layout_alignBottom="@+id/ocp"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/rjcSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/rjc"
+        android:layout_alignBottom="@+id/rjc"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/syqSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/syq"
+        android:layout_alignBottom="@+id/syq"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Button
+        android:id="@+id/cjc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocpSwitch"
+        android:layout_toLeftOf="@+id/cjcSwitch"
+        android:text="Conservative Jewish Community"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/syq"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sc"
+        android:layout_toLeftOf="@+id/syqSwitch"
+        android:text="Sephardic Yidden Quakers"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/sc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/rjc"
+        android:layout_below="@+id/rjc"
+        android:layout_toLeftOf="@+id/scSwitch"
+        android:text="Shira Chadasha"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/ocp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="28dp"
+        android:layout_toLeftOf="@+id/ocpSwitch"
+        android:text="Orthodox Community at Penn"
+        android:textSize="20dp"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/ocp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Select which religious communities you&apos;d like to receive notifications from."
+        android:textSize="25dp"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

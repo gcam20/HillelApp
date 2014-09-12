@@ -1,0 +1,503 @@
+#table_1
+{
+	position: relative;
+	left: 12px;
+}
+
+#table_2
+{
+	position: relative;
+	left: 28px;
+}
+
+input
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #888888;
+}
+
+textarea
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #888888;
+}
+
+select
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #888888;
+}
+
+button
+{
+	background-color: rgba(255, 255, 255, 0.5);
+	border: 1px solid #888888;
+}
+
+
+/**** Main Containers ****/
+body
+{
+	background-image:url("img/penn.jpg");
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	font-family: 'Alegreya Sans', sans-serif;
+	font-size:small;
+	margin:8px 0 16px;
+	text-align:center;
+}
+
+#form_container
+{
+	background-color:rgba(255, 255, 255, 0.7);
+	margin:0 auto;
+	text-align:left;
+	width:750px;
+	border-radius: 15px;
+}
+
+#top
+{
+	display:block;
+	height:10px;
+	margin:10px auto 0;
+	width:650px;
+}
+
+#footer
+{
+	clear:both;
+	color:#777777;
+	text-align:center;
+	padding-bottom: 15px;
+	font-size: 85%;
+}
+
+#footer a{
+	color:#555555;
+	text-decoration: none;
+	border-bottom: 1px dotted #999999;
+}
+
+#bottom
+{
+	display:block;
+	height:10px;
+	margin:0 auto;
+	width:650px;
+}
+
+form.appnitro
+{
+	margin:20px 20px 0;
+	padding:0 0 20px;
+}
+
+
+/**** Logo Section  *****/
+
+h1
+{
+	background-color:rgba(78, 120, 160, 0.7);
+	margin:0;
+	min-height:0;
+	padding-bottom:9px;
+	padding-left: 10px;
+	text-decoration:none;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+h1 span
+{
+	display:inline;
+	height:100%;
+	min-height:40px;
+	overflow:hidden;
+}
+
+
+img
+{
+	behavior:url(css/iepngfix.htc);
+	border:none;
+}
+
+.logout_container
+{
+	float:right;
+	padding-right: 20px;
+	padding-top: 7px;
+	font-size: 11px;
+	text-decoration: none;
+	vertical-align: middle;
+}
+
+.logout_container a
+{
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+/**** Tables ****/
+table td.leftCol
+{
+	text-align: right;
+	vertical-align: top;
+}
+
+table td.rightCol
+{
+	text-align: left;
+	vertical-align: top;
+}
+
+label#time_separator
+{
+	margin-left: -3px;
+	margin-right: -3px;
+}
+
+/**** Form Section ****/
+.appnitro
+{
+	font-family: 'Alegreya Sans', sans-serif;
+/*	font-family:"Lucida Grande", Tahoma, Arial, Verdana, sans-serif;
+*/	
+	font-size:small;
+}
+
+.appnitro li
+{
+	width:61%;
+}
+
+form ul
+{
+	font-size:100%;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+
+form li
+{
+	display:block;
+	margin:0;
+	padding:4px 5px 2px 9px;
+	position:relative;
+}
+
+form li:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.buttons:after
+{
+	clear:both;
+	content:".";
+	display:block;
+	height:0;
+	visibility:hidden;
+}
+
+.buttons
+{
+	clear:both;
+	display:block;
+	margin-top:10px;
+}
+
+* html form li
+{
+	height:1%;
+}
+
+* html .buttons
+{
+	height:1%;
+}
+
+* html form li div
+{
+	display:inline-block;
+}
+
+form li div
+{
+	color:#444;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+form li span
+{
+	color:#444;
+	float:left;
+	margin:0 4px 0 0;
+	padding:0 0 8px;
+}
+
+form li div.left
+{
+	display:inline;
+	float:left;
+	width:48%;
+}
+
+form li div.right
+{
+	display:inline;
+	float:right;
+	width:48%;
+}
+
+form li div.left .medium
+{
+	width:100%;
+}
+
+form li div.right .medium
+{
+	width:100%;
+}
+
+.clear
+{
+	clear:both;
+}
+
+form li div label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+form li span label
+{
+	clear:both;
+	color:#444;
+	display:block;
+	font-size:9px;
+	line-height:9px;
+	margin:0;
+	padding-top:3px;
+}
+
+form li .datepicker
+{
+	cursor:pointer !important;
+	float:left;
+	height:16px;
+	margin:.1em 5px 0 0;
+	padding:0;
+	width:16px;
+}
+
+.form_description
+{
+	border-bottom:1px dotted #ccc;
+	clear:both;
+	display:inline-block;
+	margin:0 0 1em;
+}
+
+.form_description[class]
+{
+	display:block;
+}
+
+.form_description h2
+{
+	clear:left;
+	font-size:160%;
+	font-weight:400;
+	margin:0 0 3px;
+}
+
+.form_description p
+{
+	font-size:95%;
+	line-height:130%;
+	margin:0 0 12px;
+}
+
+form hr
+{
+	display:none;
+}
+
+form li.section_break
+{
+	border-top:1px dotted #ccc;
+	margin-top:9px;
+	padding-bottom:0;
+	padding-left:9px;
+	padding-top:13px;
+	width:97% !important;
+}
+
+form ul li.first
+{
+	border-top:none !important;
+	margin-top:0 !important;
+	padding-top:0 !important;
+}
+
+form .section_break h3
+{
+	font-size:110%;
+	font-weight:400;
+	line-height:130%;
+	margin:0 0 2px;
+}
+
+form .section_break p
+{
+	font-size:85%;
+
+	margin:0 0 10px;
+}
+
+/**** Buttons ****/
+input.button_text
+{
+	overflow:visible;
+	padding:0 7px;
+	width:auto;
+}
+
+.buttons input
+{
+	font-size:120%;
+	margin-right:5px;
+}
+
+
+/**** Errors ****/
+#error_message
+{
+	background:#fff;
+	border:1px dotted red;
+	margin-bottom:1em;
+	padding-left:0;
+	padding-right:0;
+	padding-top:4px;
+	text-align:center;
+	width:99%;
+}
+
+#error_message_title
+{
+	color:#DF0000;
+	font-size:125%;
+	margin:7px 0 5px;
+	padding:0;
+}
+
+#error_message_desc
+{
+	color:#000;
+	font-size:100%;
+	margin:0 0 .8em;
+}
+
+#error_message_desc strong
+{
+	background-color:#FFDFDF;
+	color:red;
+	padding:2px 3px;
+}
+
+form li.error
+{
+	background-color:#FFDFDF !important;
+	border-bottom:1px solid #EACBCC;
+	border-right:1px solid #EACBCC;
+	margin:3px 0;
+}
+
+form li.error label
+{
+	color:#DF0000 !important;
+}
+
+form p.error
+{
+	clear:both;
+	color:red;
+	font-size:10px;
+	font-weight:700;
+	margin:0 0 5px;
+}
+
+form .required
+{
+	color:red;
+	float:none;
+	font-weight:700;
+}
+
+
+/*** Success Message ****/
+.form_success 
+{
+	clear: both;
+	margin: 0;
+	padding: 90px 0pt 100px;
+	text-align: center
+}
+
+.form_success h2 {
+    clear:left;
+    font-size:160%;
+    font-weight:normal;
+    margin:0pt 0pt 3px;
+}
+
+/*** Password ****/
+ul.password{
+    margin-top:60px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.password h2{
+    color:#DF0000;
+    font-weight:bold;
+    margin:0pt auto 10px;
+}
+
+.password input.text {
+   font-size:170% !important;
+   width:380px;
+   text-align: center;
+}
+.password label{
+   display:block;
+   font-size:120% !important;
+   padding-top:10px;
+   font-weight:bold;
+}
+
+#li_captcha{
+   padding-left: 5px;
+}
+
+
+#li_captcha span{
+	float:none;
+}

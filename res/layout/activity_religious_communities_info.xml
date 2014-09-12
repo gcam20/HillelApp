@@ -1,0 +1,162 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redbluelights"
+    tools:context=".ReligiousCommunitiesInfoActivity" >
+    
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        
+        <!-- Orthodox Community at Penn -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/orthodox_title" />
+	    </TableRow>
+		    
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/orthodox_body" />
+	  	</TableRow>
+		   
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/orthodox_contact" />
+		</TableRow>  
+		
+        <!-- Conservative Jewish Community -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/conservative_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/conservative_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/conservative_contact" />
+	   	</TableRow>  
+		
+        <!-- Reform Jewish Community -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/reform_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/reform_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/reform_contact" />
+	    </TableRow>  
+		
+        <!-- Shira Chadasha -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/shira_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/shira_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/shira_contact" />
+	    </TableRow>  
+		
+        <!-- Sephardic Yidden Quakers -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/sephardic_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/sephardic_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/sephardic_contact" />
+	    </TableRow>
+	   
+   </TableLayout>
+    
+    
+
+</ScrollView>

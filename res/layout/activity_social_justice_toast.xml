@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redabstract"
+    tools:context=".SocialJusticeToastActivity" >
+
+     <Button
+         android:id="@+id/soupKitchen"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/atid"
+         android:layout_below="@+id/ocpChessed"
+         android:textColor="@color/white"
+         android:layout_toLeftOf="@+id/ocpChessedSwitch"
+         android:text="Soup Kitchen" />
+
+    <Switch
+        android:id="@+id/ocpChessedSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/ocpChessed"
+        android:layout_alignBottom="@+id/ocpChessed"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:layout_alignParentRight="true"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/atidSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/atid"
+        android:layout_alignBottom="@+id/atid"
+        android:layout_alignLeft="@+id/bigSwitch"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/bigSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/big"
+        android:layout_alignBottom="@+id/big"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/soupKitchenSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/soupKitchen"
+        android:layout_alignBottom="@+id/soupKitchen"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/ecoSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/eco"
+        android:layout_alignBottom="@+id/eco"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/ocpChessed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/soupKitchen"
+        android:textColor="@color/white"
+        android:layout_below="@+id/bigSwitch"
+        android:layout_toLeftOf="@+id/ocpChessedSwitch"
+        android:text="OCP Chessed" />
+
+    <Button
+        android:id="@+id/eco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/atid"
+        android:layout_below="@+id/atid"
+        android:layout_toLeftOf="@+id/atidSwitch"
+        android:textColor="@color/white"
+        android:text="Hillel Eco-Reps" />
+
+    <Button
+        android:id="@+id/atid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:layout_below="@+id/soupKitchen"
+        android:layout_toLeftOf="@+id/atidSwitch"
+        android:text="Atid: Mentoring for the Future" />
+
+    <Button
+        android:id="@+id/big"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eco"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@+id/bigSwitch"
+        android:text="Big Brothers Big Sisters" />
+
+    <Button
+        android:id="@+id/sunshine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eco"
+        android:layout_below="@+id/eco"
+        android:layout_toLeftOf="@+id/ecoSwitch"
+        android:textColor="@color/white"
+        android:text="Project Sunshine" />
+
+    <Switch
+        android:id="@+id/sunshineSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sunshine"
+        android:layout_alignBottom="@+id/sunshine"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/big"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Select which social justice organizations you&apos;d like to receive notifications from."
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+</RelativeLayout>

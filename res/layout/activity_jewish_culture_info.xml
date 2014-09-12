@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redbluelights"
+    tools:context=".JewishCultureInfoActivity" >
+    
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        
+        <!-- J-Bagel -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/jbagel_title" />
+	    </TableRow>
+		    
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/jbagel_body" />
+	  	</TableRow>
+		   
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/jbagel_contact" />
+		</TableRow>  
+		
+        <!-- Penn Shabbatones -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/shabbatones_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/shabbatones_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/shabbatones_contact" />
+	   	</TableRow>  
+		
+        <!-- Shabbat Committee -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/shabcom_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/shabcom_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/shabcom_contact" />
+	    </TableRow>  
+		
+        <!-- Penn Transfers -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/transfers_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/transfers_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/transfers_contact" />
+	    </TableRow>  
+		
+        <!-- Marketing Committee -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/markcom_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/markcom_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/markcom_contact" />
+	    </TableRow>
+	    
+        <!-- Penn Zoremet -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/zoremet_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/zoremet_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/zoremet_contact" />
+	    </TableRow>
+	   
+   </TableLayout>
+    
+    
+
+</ScrollView>

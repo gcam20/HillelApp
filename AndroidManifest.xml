@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="cis350.upenn.edu"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="cis350.upenn.edu.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.parse.starter.permission.C2D_MESSAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cis350.upenn.edu.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.FoodActivity"
+            android:label="@string/title_activity_food" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.FoodHoursActivity"
+            android:label="@string/title_activity_food_hours" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.SettingsActivity"
+            android:label="@string/title_activity_settings" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.ReligiousCommunitiesToastActivity"
+            android:label="@string/title_activity_religious_communities_toast" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.IsraelToastActivity"
+            android:label="@string/title_activity_israel_toast" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.SocialJusticeToastActivity"
+            android:label="@string/title_activity_social_justice_toast" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.EducationToastActivity"
+            android:label="@string/title_activity_education_toast" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.JewishCultureToastActivity"
+            android:label="@string/title_activity_jewish_culture_toast" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.PeopleActivity"
+            android:label="@string/title_activity_people" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.ShabbatSignUpActivity"
+            android:label="@string/title_activity_sign_up" >
+        </activity>
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="cis350.upenn.edu" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="cis350.upenn.edu.OrganizationsActivity"
+            android:label="@string/title_activity_organization" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.IsraelInfoActivity"
+            android:label="@string/title_activity_israel_info" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.JewishCultureInfoActivity"
+            android:label="@string/title_activity_jewish_culture_info" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.EducationInfoActivity"
+            android:label="@string/title_activity_education_info" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.ReligiousCommunitiesInfoActivity"
+            android:label="@string/title_activity_religious_communities_info" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.SocialJusticeInfoActivity"
+            android:label="@string/title_activity_social_justice_info" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.SignUpListActivity"
+            android:label="@string/title_activity_event_list" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.SignUpActivity"
+            android:label="@string/title_activity_event" >
+        </activity>
+        <activity
+            android:name="cis350.upenn.edu.EventActivity"
+            android:label="@string/title_activity_event" >
+        </activity>
+    </application>
+
+</manifest>

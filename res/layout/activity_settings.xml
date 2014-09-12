@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redabstract"
+    tools:context=".SettingsActivity" >
+
+    <Switch
+        android:id="@+id/israelSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/israel"
+        android:layout_alignBottom="@+id/israel"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/socialJusticeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/socialJustice"
+        android:layout_alignBottom="@+id/socialJustice"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/religiousCommunitiesSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/religiousCommunities"
+        android:layout_alignBottom="@+id/religiousCommunities"
+        android:layout_alignLeft="@+id/israelSwitch"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/educationSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/education"
+        android:layout_alignBottom="@+id/education"
+        android:layout_alignParentRight="true"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Switch
+        android:id="@+id/jewishCultureSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/jewishCulture"
+        android:layout_alignBottom="@+id/jewishCulture"
+        android:layout_alignLeft="@+id/educationSwitch"
+        android:text=" "
+        android:switchTextAppearance="@style/SwitchTextAppearance" />
+
+    <Button
+        android:id="@+id/israel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/religiousCommunities"
+        android:layout_below="@+id/religiousCommunities"
+        android:layout_toLeftOf="@+id/israelSwitch"
+        android:textColor="@color/white"
+        android:text="Israel" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/religiousCommunities"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="Click on a category to select specific organizations or toggle the switch to select all organizations for a community"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/socialJustice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/israel"
+        android:layout_below="@+id/israel"
+        android:layout_toLeftOf="@+id/jewishCultureSwitch"
+        android:textColor="@color/white"
+        android:text="Social Justice" />
+
+    <Button
+        android:id="@+id/education"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/socialJustice"
+        android:layout_alignRight="@+id/socialJustice"
+        android:layout_below="@+id/socialJustice"
+        android:textColor="@color/white"
+        android:text="Education" />
+
+    <Button
+        android:id="@+id/jewishCulture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/education"
+        android:layout_below="@+id/education"
+        android:textColor="@color/white"
+        android:layout_toLeftOf="@+id/jewishCultureSwitch"
+        android:text="Jewish Culture" />
+
+    <Button
+        android:id="@+id/religiousCommunities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/religiousCommunitiesSwitch"
+        android:text="Religious Communities"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

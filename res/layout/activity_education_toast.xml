@@ -1,0 +1,171 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redabstract"
+    tools:context=".EducationToastActivity" >
+
+    <Button
+        android:id="@+id/holocaust"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sundayNightLearning"
+        android:layout_below="@+id/sundayNightLearning"
+        android:layout_toLeftOf="@+id/sundayNightLearningSwitch"
+        android:text="Holocaust Education Committee"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Switch
+        android:id="@+id/sundayNightLearningSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sundayNightLearning"
+        android:layout_alignBottom="@+id/sundayNightLearning"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/shortStorySwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/shortStory"
+        android:layout_alignBottom="@+id/shortStory"
+        android:layout_alignLeft="@+id/learningInitiativeSwitch"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/learningInitiativeSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/learningInitiative"
+        android:layout_alignBottom="@+id/learningInitiative"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/holocaustSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/holocaust"
+        android:layout_alignBottom="@+id/holocaust"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/divreiBeitSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/divreiBeit"
+        android:layout_alignBottom="@+id/divreiBeit"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/sundayNightLearning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learningInitiative"
+        android:layout_below="@+id/learningInitiativeSwitch"
+        android:layout_toLeftOf="@+id/sundayNightLearningSwitch"
+        android:text="Sunday Night Learning"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/divreiBeit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shortStory"
+        android:layout_below="@+id/shortStory"
+        android:layout_toLeftOf="@+id/shortStorySwitch"
+        android:textColor="@color/white"
+        android:text="Divrei Beit Hillel"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/shortStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/holocaust"
+        android:layout_below="@+id/holocaust"
+        android:layout_toLeftOf="@+id/shortStorySwitch"
+        android:text="Jewish Short Story Club"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/hebrewProject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divreiBeit"
+        android:layout_below="@+id/divreiBeit"
+        android:layout_toLeftOf="@+id/divreiBeitSwitch"
+        android:textColor="@color/white"
+        android:text="The Penn Hebrew Project"
+        android:textSize="18dp" />
+
+    <Switch
+        android:id="@+id/hebrewProjectSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/hebrewProject"
+        android:layout_alignBottom="@+id/hebrewProject"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/judaism101"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hebrewProject"
+        android:layout_alignRight="@+id/hebrewProject"
+        android:layout_below="@+id/hebrewProjectSwitch"
+        android:textColor="@color/white"
+        android:text="Judaism 101"
+        android:textSize="18dp" />
+
+    <Switch
+        android:id="@+id/judaism101Switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/judaism101"
+        android:layout_alignBottom="@+id/judaism101"
+        android:layout_alignLeft="@+id/hebrewProjectSwitch"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/learningInitiative"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Select which social justice organizations you&apos;d like to receive notifications from."
+        android:textColor="@color/white"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/learningInitiative"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="27dp"
+        android:layout_toLeftOf="@+id/learningInitiativeSwitch"
+        android:text="The Jewish Learning Initiative on Campus"
+        android:textColor="@color/white"
+        android:textSize="18dp" />
+
+</RelativeLayout>

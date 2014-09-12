@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redabstract"
+    tools:context=".IsraelToastActivity" >
+
+    <Button
+        android:id="@+id/iCult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/jStreet"
+        android:layout_toLeftOf="@+id/jStreetSwitch"
+        android:text="Israel Cultural Committee"
+        android:textColor="@color/white" />
+
+    <Switch
+        android:id="@+id/jStreetSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/jStreet"
+        android:layout_alignBottom="@+id/jStreet"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/avivSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/aviv"
+        android:layout_alignBottom="@+id/aviv"
+        android:layout_alignLeft="@+id/pipacSwitch"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/pipacSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/pipac"
+        android:layout_alignBottom="@+id/pipac"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/iCultSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/iCult"
+        android:layout_alignBottom="@+id/iCult"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Switch
+        android:id="@+id/friendsSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/friends"
+        android:layout_alignBottom="@+id/friends"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/jStreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iCult"
+        android:layout_below="@+id/pipacSwitch"
+        android:layout_toLeftOf="@+id/jStreetSwitch"
+        android:text="J-Street U Penn"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/aviv"
+        android:layout_below="@+id/aviv"
+        android:layout_toLeftOf="@+id/avivSwitch"
+        android:text="Penn Friends of Israel"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/aviv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/iCult"
+        android:layout_below="@+id/iCult"
+        android:layout_toLeftOf="@+id/avivSwitch"
+        android:text="Penn Aviv"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pipac"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="Select which Israeli organizations you&apos;d like to receive notifications from."
+        android:textSize="25dp"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/tamid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends"
+        android:layout_below="@+id/friends"
+        android:layout_toLeftOf="@+id/friendsSwitch"
+        android:text="TAMID"
+        android:textColor="@color/white" />
+
+    <Switch
+        android:id="@+id/tamidSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tamid"
+        android:layout_alignBottom="@+id/tamid"
+        android:layout_alignParentRight="true"
+        android:switchTextAppearance="@style/SwitchTextAppearance"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/pipac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/friends"
+        android:layout_below="@+id/intro"
+        android:layout_marginTop="56dp"
+        android:layout_toLeftOf="@+id/jStreetSwitch"
+        android:text="PIPAC"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

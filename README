@@ -1,0 +1,29 @@
+ANDROID PENN HILLEL APPLICATION
+Created:
+Last Updated: May 7, 2014
+
+Authors: Rachel Brown, Gabriel Campo, Josh Pearlstein, Emily Weiss
+
+---INTRODUCTION------------------------
+The Penn Hillel App was built for the purpose of consolidating much of the Hillel website into an 
+easy to use application. Students can do a range of things from signing up for Shabbat dinners, to 
+finding out which community events are coming up, to learning about some of the different groups 
+within Penn Hillel.
+
+---APPLICATION ARCHITECTURE------------
+The application opens to the main menu page. The main menu consists of a table of icons for users to 
+pick from. Below are the icons that appear:
+
+	ORGANIZATIONS: 
+	EVENTS: Lists out the different events available for the day chronologically. Clicking on an 
+	event will open up a page with more details.
+	FOOD: Lists out the dining options for the day. Will which menu is displayed depending on 
+	the time of day. May sign up for Shabbat dinners from here
+	SIGN UP: Takes events registered through a website we built and loads them so students may 
+        sign up to attend them.
+	STORE: Links to the Hillel web store.
+	GALLERY: Links to the Hillel Facebook gallery.
+	ABOUT: Describes Hillel and lists out the faculty and staff.
+	SETTINGS: Change notification settings per organizations or group.
+
+Data is stored on Parse, a free cloud based mobile app back end that allowed us to easily integrate the back end into our Java code using their API.

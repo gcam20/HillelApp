@@ -1,0 +1,190 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/redbluelights"
+    tools:context=".SocialJusticeInfoActivity" >
+    
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1" >
+        
+        <!-- Holocaust Education Comittee -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/hec_title" />
+	    </TableRow>
+		    
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/hec_body" />
+	  	</TableRow>
+		   
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/hec_contact" />
+		</TableRow>  
+		
+        <!-- OCP Chessed -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/ocp_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/ocp_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/ocp_contact" />
+	   	</TableRow>  
+		
+        <!-- Soup Kitchen -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/soup_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/soup_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/soup_contact" />
+	    </TableRow>  
+		
+        <!-- ATID: Mentoring for the Future -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/atid_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/atid_body" />
+	    </TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/atid_contact" />
+	    </TableRow>  
+		
+        <!-- Jewish Penn Environmental Group -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/jpeg_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/jpeg_body" />
+	    </TableRow>  
+		
+        <TableRow>
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:layout_marginBottom="20px"
+		        android:text="@string/jpeg_contact" />
+	    </TableRow>  
+		
+        <!-- Project Sunshine -->
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="bold"
+		        android:text="@string/sunshine_title" />
+	    </TableRow>  
+		
+        <TableRow>
+		    <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:text="@string/sunshine_body" />
+	   	</TableRow>  
+		
+        <TableRow> 
+		   <TextView
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:textColor="@color/white" 
+		        android:textStyle="italic"
+		        android:text="@string/sunshine_contact" />
+	   
+	   </TableRow>
+	   
+   </TableLayout>
+    
+    
+
+</ScrollView>

@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>New Event | Penn Hillel</title>
+<link rel="stylesheet" type="text/css" href="view.css" media="all">
+<link href='http://fonts.googleapis.com/css?family=Alegreya+Sans' rel='stylesheet' type='text/css'>
+
+
+<!-- JAVASCRIPT FUNCTIONALITY -->
+<script type="text/javascript" src="event.js"></script>
+<script type="text/javascript" src="http://www.parsecdn.com/js/parse-1.2.16.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- HTML MARKUP -->
+</head>
+<body id="main_body" >
+	<div id="form_container">
+	
+		<h1>
+			<a>
+				<span class="logo_container">
+					<img id="logo" src="img/hillel_logo.png" alt="PennHillel" height="60px" align="top"/>
+				</span>
+			</a>
+		</h1>
+
+		<form id="page" class="appnitro"  method="post" action="">
+			<div class="form_description">
+				<h2>Add a New Event</h2>
+				<p>Please fill out the information below.</p>
+			</div>						
+			<ul >
+
+				<table id="table_1">
+
+					<!-- Name -->
+					<tr id="name_col">
+						<td class="leftCol">
+							<label class="name" for="name_input">Event name: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="name_input" type="text" size="40"/>
+						</td>
+					</tr>
+
+					<!-- Description -->
+					<tr id="description_col">
+						<td class="leftCol">
+							<label class="description" for="description_input">Description: </label>
+						</td>
+
+						<td class="rightCol">
+							<textarea id="description_input" rows="6" cols="48"></textarea>
+						</td>
+					</tr>
+
+					<!-- Event Type -->
+					<tr id="type_col">
+						<td class="leftCol">
+							<label class="type" for="type_input">Event type: </label>
+						</td>
+
+						<td class="rightCol">
+							<select id="type_input">
+								<option value="Dzs9SNeG56">Israel</option>
+								<option value="IhC2ZJ8IG8">Social/Cultural</option>
+								<option value="3UY8KgZbRJ">Education</option>
+								<option value="OpswDL2Vrf">Social Justice</option>
+								<option value="ota8bruyfG">Jewish Life</option>
+								<option value="bHXTRb4TLC">Group Meeting</option>
+								<option value="SrwyR53hbN">Other</option>
+							</select>
+						</td>
+					</tr>
+				</table>
+
+				<br>
+
+				<table id="table_2">
+					<!-- Date -->
+					<tr id="date_col">
+						<td class="leftCol">
+							<label class="date">Date: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="month_input" class="date_field" type="text" maxlength="2" size="2" placeholder="MM"/>
+							<input id="day_input"  class="date_field" type="text" maxlength="2" size="2" placeholder="DD"/>
+							<input id="year_input"  class="date_field" type="text" maxlength="4" size="4" placeholder="YYYY"/>
+						</td>
+					</tr>
+
+					<!-- Time -->
+					<tr id="time_col">
+						<td class="leftCol">
+							<label class="time">Time: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="hour_input" type="text" maxlength="2" size="2"/>
+							<label id="time_separator">:</label>
+							<input id="minute_input" type="text" maxlength="2" size="2"/>
+							<select id="ampm_input">
+								<option value="am">AM</option>
+								<option value="pm">PM</option>
+							</select>
+						</td>
+					</tr>
+
+					<!-- Location -->
+					<tr id="location_col">
+						<td class="leftCol">
+							<label>Location: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="location_input" type="text" size="30"/>
+						</td>
+					</tr>
+				</table>
+
+				<br>
+
+				<table id="table_3">
+					<!-- Contact Name -->
+					<tr id="cname_col">
+						<td class="leftCol">
+							<label>Contact name: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="cname_input" type="text"/>
+						</td>
+					</tr>
+
+					<!-- Contact Email -->
+					<tr id="cemail_col">
+						<td class="leftCol">
+							<label>Contact email: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="cemail_input" type="text" size="30"/>
+						</td>
+					</tr>
+
+					<!-- Sign Up Link -->
+					<tr id="room_col">
+						<td class="leftCol">
+							<label>Sign up link: </label>
+						</td>
+
+						<td class="rightCol">
+							<input id="url_input" type="text" size="60" placeholder="ex: http://www.pennhillel.org/mynewevent"/>
+						</td>
+					</tr>
+
+				</table>
+			
+				<li class="buttons">
+			    	<input type="hidden" name="form_id"/>
+			    	<center>
+			    		<button type="button" onclick="submitClick()">Submit</button>
+			    		<button type="button" onclick="cancelClick()">Cancel</button>
+			    	</center>
+				</li>
+
+			</ul>
+		</form>	
+		<div id="footer">
+			Hillel at the University of Pennsylvania<br>
+			Visit us at <a href="http://pennhillel.org/"> our website </a>
+		</div>
+	</div>
+	</body>
+</html>

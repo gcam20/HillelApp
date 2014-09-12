@@ -1,0 +1,187 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/hillel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+    
+    <TextView
+        android:id="@+id/foodText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/foodIcon"
+        android:layout_alignRight="@+id/foodIcon"
+        android:layout_below="@+id/foodIcon"
+        android:text="Dining"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/signUpsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/signUpIcon"
+        android:layout_alignRight="@+id/signUpIcon"
+        android:layout_below="@+id/signUpIcon"
+        android:text="Sign Ups"
+        android:gravity="center"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/donateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donateIcon"
+        android:layout_alignRight="@+id/donateIcon"
+        android:layout_below="@+id/donateIcon"
+        android:gravity="center"
+        android:text="Support"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/foodIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/foodicon" />
+
+    <TextView
+        android:id="@+id/galleryText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/galleryIcon"
+        android:layout_alignRight="@+id/galleryIcon"
+        android:layout_below="@+id/galleryIcon"
+        android:gravity="center"
+        android:text="Gallery"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/storeIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/donateText"
+        android:layout_below="@+id/donateText"
+        android:src="@drawable/storeicon" />
+
+    <TextView
+        android:id="@+id/storeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/storeIcon"
+        android:layout_alignRight="@+id/storeIcon"
+        android:layout_below="@+id/storeIcon"
+        android:gravity="center"
+        android:text="Store"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/signUpIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/foodText"
+        android:layout_toRightOf="@+id/foodText"
+        android:src="@drawable/signupicon" />
+
+    <ImageButton
+        android:id="@+id/organizationsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/signUpsText"
+        android:layout_toRightOf="@+id/signUpsText"
+        android:src="@drawable/organizationsicon" />
+
+    <TextView
+        android:id="@+id/organizationsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/signUpsText"
+        android:layout_alignBottom="@+id/signUpsText"
+        android:layout_alignLeft="@+id/organizationsIcon"
+        android:layout_alignRight="@+id/organizationsIcon"
+        android:gravity="center"
+        android:text="Hillel 101"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/eventsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/organizationsText"
+        android:layout_alignBottom="@+id/organizationsText"
+        android:layout_alignLeft="@+id/eventsIcon"
+        android:layout_alignRight="@+id/eventsIcon"
+        android:gravity="center"
+        android:text="Events"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/settingsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settingsIcon"
+        android:layout_alignRight="@+id/settingsIcon"
+        android:layout_below="@+id/settingsIcon"
+        android:gravity="center"
+        android:text="Settings"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/settingsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/eventsText"
+        android:layout_below="@+id/eventsText"
+        android:src="@drawable/settings" />
+
+    <ImageButton
+        android:id="@+id/donateIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/settingsText"
+        android:layout_below="@+id/settingsText"
+        android:layout_marginTop="11dp"
+        android:src="@drawable/donateicon" />
+
+    <ImageButton
+        android:id="@+id/aboutIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/storeText"
+        android:layout_alignRight="@+id/galleryText"
+        android:src="@drawable/about" />
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/storeText"
+        android:layout_alignBottom="@+id/storeText"
+        android:layout_alignLeft="@+id/aboutIcon"
+        android:layout_alignRight="@+id/aboutIcon"
+        android:gravity="center"
+        android:text="About"
+        android:textColor="@color/white" />
+
+    <ImageButton
+        android:id="@+id/eventsIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/organizationsText"
+        android:layout_toRightOf="@+id/organizationsIcon"
+        android:src="@drawable/eventsicon" />
+
+    <ImageButton
+        android:id="@+id/galleryIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/donateIcon"
+        android:layout_toLeftOf="@+id/signUpsText"
+        android:src="@drawable/galleryicon" />
+
+</RelativeLayout>
